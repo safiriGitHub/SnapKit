@@ -29,8 +29,8 @@ let package = Package(
     name: "SnapKit",
     platforms: [
         .iOS(.v9),
-        .macOS(.v10_12),
-        .tvOS(.v9)
+        //.macOS(.v10_12),
+        //.tvOS(.v9)
     ],
     products: [
         .library(name: "SnapKit", targets: ["SnapKit"]),
@@ -40,6 +40,6 @@ let package = Package(
         .testTarget(name: "SnapKitTests", dependencies: ["SnapKit"]),
     ],
     swiftLanguageVersions: [
-        .v4
+        .v4, .v5
     ]
 )
